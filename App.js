@@ -2,11 +2,10 @@ import { View } from "react-native";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import ListingDetailScreen from "./app/screens/ListingDetailScreen";
-
-import Card from './app/components/Card'
+import MessagesScreen from "./app/screens/MessagesScreen";
 
 export default function App() {
   return (
-    <ViewImageScreen />
+    <MessagesScreen />
   );
 }

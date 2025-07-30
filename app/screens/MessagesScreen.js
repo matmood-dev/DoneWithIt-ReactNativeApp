@@ -22,10 +22,12 @@ const initialMessages = [
 
 function MessagesScreen(props) {
   const [messages, setMessages] = useState(initialMessages);
-  const handleDelete = message => {
+  const [refreshing, setRefreshing] = useState(false);
+
+  const handleDelete = (message) => {
     //Delete the message from messages
-    setMessages(messages.filter((m) => m.id!== message.id));
-  }
+    setMessages(messages.filter((m) => m.id !== message.id));
+  };
   return (
     <Screen>
       <FlatList
@@ -43,6 +45,17 @@ function MessagesScreen(props) {
           />
         )}
         ItemSeparatorComponent={ListItemSeperator}
+        refreshing={refreshing}
+        onRefresh={() => {
+          setMessages([
+            {
+              id: 2,
+              title: "T2",
+              description: "D2",
+              image: require("../assets/matt.jpg"),
+            },
+          ]);
+        }}
       />
     </Screen>
   );

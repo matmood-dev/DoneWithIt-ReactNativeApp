@@ -10,11 +10,15 @@ import Icon from "./app/components/Icon";
 import ListItem from "./app/components/ListItem";
 import AccountScreen from "./app/screens/AccountScreen";
 import ListingsScreen from "./app/screens/ListingsScreen";
+import AppTextInput from "./app/components/AppTextInput";
 
 export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <ListingsScreen />
+      <AppTextInput
+        placeholder="Please enter your bank account password"
+        icon="key"
+      />
     </GestureHandlerRootView>
   );
 }

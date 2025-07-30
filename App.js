@@ -7,6 +7,6 @@ import Card from './app/components/Card'
 
 export default function App() {
   return (
-    <ListingDetailScreen />
+    <ViewImageScreen />
   );
 }

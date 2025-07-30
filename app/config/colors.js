@@ -6,5 +6,7 @@ export default{
     medium: '#6e6969',
     light: '#eeeaeaff',
     gray: '#d8d8d8ff',
-    danger: '#ff5252'
+    danger: '#ff5252',
+    warn: '#efc456ff',
+    grassy: '#b3f500ff'
 }
